@@ -20,8 +20,8 @@ spring:
       time-to-live: 3600000
   config:
     import:
-      - "file://${assets.host.path}"
-      - "file://${user.home}/.config/home-ops/default.toml"
+      - "optional:file://${assets.host.path}"
+      - "optional:file://${user.home}/.config/home-ops/default.toml"
   data:
     jpa:
       repositories:
